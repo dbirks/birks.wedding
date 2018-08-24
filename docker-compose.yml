@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    image: nginx
+    container_name: birks.wedding
+    volumes:
+      - $PWD:/usr/share/nginx/html
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy"
+      - "traefik.frontend.rule=Host:birks.wedding"
+      - "traefik.default.protocol=http"
+      - "traefik.backend=birks.wedding"
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+
+
