@@ -6,6 +6,7 @@
 // 
 // Quickly modify global styling by enabling or disabling optional features.
   
+@import url('https://fonts.googleapis.com/css?family=Satisfy'); 
 @import url('https://fonts.googleapis.com/css?family=Homemade Apple'); 
 @import url('https://fonts.googleapis.com/css?family=Homeade Apple'); 
 @import url('https://fonts.googleapis.com/css?family=Jua'); 
@@ -23,7 +24,7 @@ $enable-print-styles:       true;
 $theme-colors: (
   primary: #A10000,
   secondary: #A2B809,
-  light: #f3f3f3,
+  light: #ffffff,
   dark: #151515,
   info: #ccc,
   success: #28a745,
@@ -40,11 +41,13 @@ $link-color: #12bbad;
 
 // Fonts
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$headings-font-family: Homemade Apple;
+$headings-font-family: Satisfy;
 
 
 
-$display-font-family: $font-family-base;
+
+$display-font-family: Homemade Apple;
+
 $font-weight-normal: 200;
 $headings-font-weight: 200;
 $lead-font-size:   1.30rem;
